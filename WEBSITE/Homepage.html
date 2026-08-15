@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://localhost/form/homepage.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moletjie Stand Payment - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('homepage.jpg'); /* Add your background image URL here */
+            background-size: cover;
+            background-position: center;
+            color: #333;
+        }
+        header {
+            background-color: #3f51b5;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .hero {
+            text-align: center;
+            padding: 5px 0; /* Reduced padding */
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3f51b5;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #303f9f;
+        }
+        .section {
+            padding: 20px 0; /* Adjusted padding */
+            text-align: center;
+            display: none;
+        }
+        .section.active {
+            display: block;
+        }
+        .section.about {
+            padding-bottom: 1px; /* Further reduced bottom padding */
+        }
+        .section.contact {
+            padding-top: 1px; /* Adjusted padding-top */
+        }
+        footer {
+            background-color: #303f9f;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to Moletjie Stand Payment</h1>
+            <p>Pay for your stand online!</p>
+            <a href="register.html" class="btn">Register</a>
+            <a href="login.html" class="btn">Login</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <h1>Empowering Moletjie Community</h1>
+            <p>Moletjie Stand Payment simplifies the process of stand payments for the Moletjie community. Join us today!</p>
+            <a href="http://localhost/form/homepage.html#" class="btn learn-more">Learn More</a>
+        </section>
+
+        <section class="section about">
+            <h2>About Us</h2>
+            <p>Moletjie Stand Payment is a convenient platform designed to allow householders of Moletjie community to pay for their stands online. Our mission is to simplify the process of stand payments and provide a seamless experience for our users.</p>
+        </section>
+
+        <section class="section contact">
+            <h2>Contact Us</h2>
+            <p>For any inquiries or assistance, please feel free to contact us:</p>
+            <ul>
+                <li>Email: info@moletjiestandpayment.com</li>
+                <li>Phone: +1234567890</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        © 2024 Moletjie Stand Payment. All rights reserved.
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const learnMoreButton = document.querySelector(".learn-more");
+            const aboutSection = document.querySelector(".about");
+            const contactSection = document.querySelector(".contact");
+
+            learnMoreButton.addEventListener("click", function(event) {
+                event.preventDefault(); // Prevent default anchor behavior
+                aboutSection.classList.add("active"); // Show the "About Us" section
+                contactSection.classList.add("active"); // Show the "Contact Us" section
+                window.scrollTo({ top: aboutSection.offsetTop, behavior: "smooth" }); // Smooth scroll to the sections
+            });
+        });
+    </script>
+
+
+</body></html>
